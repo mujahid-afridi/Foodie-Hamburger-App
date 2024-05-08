@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.body-container{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F6F0EB;
+}
+main{
+    margin: 0px 30px 20px 30px;
+}
+.header{
+    max-width: 100%;
+    height: 121px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    height: 100%;
+    margin-inline: auto;
+    padding: 0px 20px 0px 20px;
+}
+.logo{
+    height: 71px;
+    width: 61px;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+}
+.list li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #492118;
+}
+.list li:not(:first-child) a{
+    margin-left: 50px;
+}
+#cross-icon{
+    display: none;
+}
+.menu-container{
+    display: none;
+}
+.first-img-container{
+    margin: 80px auto 20px;
+    max-width: 1290px;
+    max-height: 616px;
+}
+.first-img-container img{
+    width: 100%;
+    height: 100%;
+}
+.first-img-container +  p{
+    text-align: center;
+    color:#492118;
+    font-size: 1.5rem;
+}
+
+.second-img-container{
+    margin-top: 100px;
+    max-width: 1040px;
+    margin-inline: auto;
+}
+.second-img-container h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#492118;
+    font-weight: 700;
+}
+.second-img{
+    max-width: 1040px;
+    max-height: 694px;
+    margin-top: 30px;
+}
+.second-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.third-img-container{
+    margin-top: 100px;
+    max-width: 1040px;
+    margin-inline: auto;
+}
+.third-img-container h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#492118;
+    font-weight: 700;
+}
+.third-img{
+    max-width: 1040px;
+    max-height: 694px;
+    
+    margin-top: 30px;
+}
+.third-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.fourth-img-container{
+    margin-top: 100px;
+    max-width: 1040px;
+    margin-inline: auto;
+}
+.fourth-img-container h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#492118;
+    font-weight: 700;
+}
+.fourth-img{
+    max-width: 1040px;
+    max-height: 694px;
+    margin-top: 30px;
+}
+.fourth-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.fifth-img-container{
+    margin-top: 100px;
+    max-width: 1040px;
+    margin-inline: auto;
+}
+.fifth-img-container h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#492118;
+    font-weight: 700;
+}
+.fifth-img{
+    max-width: 1040px;
+    max-height: 694px;
+    margin-top: 30px;
+}
+.fifth-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.six-img-container{
+    margin-top: 100px;
+    max-width: 1040px;
+    margin-inline: auto;
+}
+.six-img-container h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#492118;
+    font-weight: 700;
+}
+.six-img{
+    max-width: 1040px;
+    max-height: 694px;
+    margin-top: 30px;
+}
+.six-img img{
+    width: 100%;
+    height: 100%;
+}
+#go-to-top{
+    text-align: end;
+    max-width: 1040px;
+    margin-inline: auto;
+    margin-top: 70px;   
+}
+#go-to-top a{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #492118;
+}
+#made-by{
+    text-align: center;
+    color:#858585;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 40px;
+}
+@media(max-width:1135px){
+    .list li:not(:first-child) a{
+        margin-left: 30px;
+    }
+    .list li a{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media(max-width:830px){
+    .list li:not(:first-child) a{
+        margin-left: 20px;
+    }
+    .list li a{
+        font-size: 15px;
+    }
+}
+@media(max-width:765px){
+    .body-container{
+        overflow-x: hidden;
+        height: 100vh;
+    }
+    .header{
+        background-color: transparent;
+        position: sticky;
+        top: 0px;
+        backdrop-filter:blur(5px);
+    }
+    .list{
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: -200px;
+        background-color: white;
+        padding: 30px;
+        height: 275px;
+        width: 208px;
+        line-height: 32px;
+        transition: right 0.5s ease-in-out;
+    }
+    #cross-icon{
+        display: block;
+    }
+    .list li:not(:first-child) a{
+        margin-left: 0px;
+    }
+    .list li:first-child {
+        text-align: end;
+    }
+    .menu-container{
+        background-color: white;
+        width: 146px;
+        height: 88px;
+        border-radius: 0px 0px 0px 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-icon{
+        color: #492118;
+        font-size: 33px;
+    }
+}
